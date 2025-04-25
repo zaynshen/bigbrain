@@ -220,6 +220,7 @@ const GamePlay = () => {
             onClick={handleStarNextGame}
             block
             data-cy="next-step"
+            disabled={gameStarted && currentQuestion && timeLeft > 0}
           >
             {currentQuestion
               ? isLastQuestion
