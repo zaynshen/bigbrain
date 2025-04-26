@@ -1,6 +1,6 @@
 import { message } from "antd";
 
-const BASE_URL = "https://bigbrain-backend-nine.vercel.app/api";
+const BASE_URL = "https://z5486888-bigbrain.vercel.app/api";
 
 const defaultSelect = {
   method: "GET",
