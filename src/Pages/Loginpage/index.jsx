@@ -8,6 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
   useEffect(() => {
     localStorage.removeItem("token");
+    localStorage.removeItem("email");
   }, []);
 
   //click submit
