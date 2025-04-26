@@ -2,7 +2,6 @@ import { useNavigate, Link } from "react-router-dom";
 import { Form, Input, Button, message } from "antd";
 import api from "../../components/fetch";
 import BackgroundLogo from "../../components/Background";
-import { useEffect } from "react";
 
 const Login = () => {
   const navigate = useNavigate();
