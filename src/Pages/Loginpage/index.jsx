@@ -6,11 +6,6 @@ import { useEffect } from "react";
 
 const Login = () => {
   const navigate = useNavigate();
-  useEffect(() => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("email");
-  }, []);
-
   //click submit
   const loginSubmit = (values) => {
     const { email, password } = values;
