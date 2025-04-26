@@ -2,10 +2,15 @@ import { useNavigate, Link } from "react-router-dom";
 import { Form, Input, Button, message } from "antd";
 import api from "../../components/fetch";
 import BackgroundLogo from "../../components/Background";
+import { useEffect } from "react";
 
 const Login = () => {
   const navigate = useNavigate();
   //click submit
+  useEffect(() => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("email");
+  }, []);
   const loginSubmit = (values) => {
     const { email, password } = values;
     const data = {
